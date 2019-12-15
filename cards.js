@@ -117,7 +117,7 @@ class CardSet {
   }
 
   includes(card) {
-    let result = this.cards.filter(x => x.suit == card.suit && x.rank == card.rank)[0] ? true : false; //filter out cards that match and select the 1st element, if it exists, result is true, if it doesn't, result is false
+    let result = this.cards.filter(x => x.suit == card.suit && x.rank == card.rank)[0] ? false : true; //filter out cards that match and select the 1st element, if it exists, result is true, if it doesn't, result is false
     return result; //return whether the card is inside the CardSet
   }
 
